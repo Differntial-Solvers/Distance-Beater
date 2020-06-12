@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simulations</title>
+    <link rel = "stylesheet" type = "text/css" href = "../CSSs/main theme.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body style="background-color: #0b0c10;">
+    <!-- Navigation bar -->
+    <nav>
+      <table>
+        <tr>
+          <td id="nav_bar_logo_block">
+            <!-- Navigation bar -> team name -->
+            <container id="nav_bar_logo">
+              <span id="project-name">Distance Beater</span><span id="team-name"> By Differential Solvers</span>
+              <br>
+              <span id="team-name-small"> By Differential Solvers</span>
+            </container>
+          </td>
+          <td id="nav_bar_buttons_column">
+            <!-- Navigation bar -> links -->
+            <container id="nav_bar_buttons_sec">
+              <a href="home.htm" class="nav_bar_buttons"> <img src="../Photos/Navigation bar/home.png" width="20px" height="auto"> Home</a>
+              <a href="simulations.htm" id="current_page" class="nav_bar_buttons"><img src="../Photos/Navigation bar/Simulations.png" width="27px" height="auto">Simulations</a>
+              <a href="about.htm" class="nav_bar_buttons"><img src="../Photos/Navigation bar/About.png" width="24px" height="auto"> About Us</a>
+              <a href="contact" class="nav_bar_buttons"><img src="../Photos/Navigation bar/Contact.png" width="20px" height="auto"> Contact Us</a>
+            </container>
+          </td>
+        </tr>
+      </table>
+    </nav>
+    <!-- main page content (transisions applied here) -->
+    <main>
+      <div class="block">
+        <a href="https://pdfs.semanticscholar.org/7ab1/df35e01d4d756c7906980dc3f14c802b49e5.pdf"><center><h3>The research</h3></center></a>
+        <center><h3>Main equations</h3></center>
+        <center> <img src="../Photos/Mo. AbuZaid Sim/equ_s.PNG"> </center>
+        <center><h3>Main simulation</h3></center>
+        <center><h4>Relativistic transformation of electrical current (calculate gamma) </h4></center>
+        <script src="../JSs/sim-abuzaid.js"></script>
+        <center>
+        <div>
+            <label for="dI1">dI1</label>
+            <input type="text" id="dI1" name="dI1" style="color:black;">
+            <label for="dI2">dI2</label>
+            <input type="text" id="dI2" name="dI2" style="color:black;">
+            <label for="gamma">gamma</label>
+            <input type="text" id="gamma" name="gamma" style="color:black;">
+            <br>
+            <br>
+            <button onclick="calculate_gamma()" class="calculate_button">calculate gamma</button>
+            <button onclick="calculate_dI2()" class="calculate_button">calculate dI2</button>
+            <p></p>
+            <p id="value-g">Calculation value here</p>
+        </div>
+      </center>
+      <script>
+        function calculate_gamma_complex() {
+          document.getElementById("value-g-g").innerHTML = 1 / Math.sqrt( (1 - (Math.pow(document.getElementById("v").value,2)) / (Math.pow(299792458,2))) * (1 - (Math.pow(document.getElementById("dXPL").value,2)) / (Math.pow(dX1,2))) ;
+        }
+      </script>
+      <center><h4>Lorentz transformation of a charge-current density</center></h4>
+      <center>
+      <div>
+          <label for="v">v</label>
+          <input type="text" id="v" name="v" style="color:black;">
+          <label for="dXPL">dXPL</label>
+          <input type="text" id="dXPL" name="dXPL" style="color:black;">
+          <label for="dX1">dX1</label>
+          <input type="text" id="dX1" name="dX1" style="color:black;">
+          <br>
+          <br>
+          <button onclick="calculate_gamma_complex()" class="calculate_button">calculate gamma</button>
+          <p></p>
+          <p id="value-g-g">Calculation value here</p>
+      </div>
+    </center>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="site-footer">
+      <!-- footer -> first row -->
+      <div>
+        <div class="row">
+          <!-- footer -> first row -> 1st column (Who we are section) -->
+          <div class="col-sm-12 col-md-6">
+            <h6>Who we are</h6>
+            <p class="text-justify">We are a group of youth who belives in their abilites to achieve their thoughts, we belive that all people around the world should have the power of knowldge. We try as hard as we can to make the world a better place, we hope w are making a differnce, a good one! We created this orgnization so we can achieve our goals in the most effcient and professional way; we are doing a lot, and it is hard, but we belive the final outcome desrves.</p>
+          </div>
+          <!-- footer -> first row -> 2nd column (science branches section) -->
+          <div class="col-xs-6 col-md-3">
+            <h6>Branches</h6>
+            <ul class="footer-links">
+              <li><a href="#physics">Physics</a></li>
+              <li><a href="#">Chemistry</a></li>
+              <li><a href="#">Biology</a></li>
+              <li><a href="#">Geology</a></li>
+            </ul>
+          </div>
+          <!-- footer -> first row -> 3nd column (quick links) -->
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href=about.htm>About Us</a></li>
+              <li><a href=contact.htm>Contact Us</a></li>
+              <li><a href=simulations.htm>Simulations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- footer -> sperating line -->
+      <hr>
+      <!-- footer -> 2nd row -->
+      <div>
+        <div class="row">
+          <!-- footer -> 2nd row -> 1st column (copyrights) -->
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <i>Differential Solvers</i>. <br> Website made at <i>Crisis Engineering
+            Contest</i> hosted by <i>IEEE Zewail City</i>.</p>
+          </div>
+          <!-- footer -> 2nd row -> 2nd column (social media) -->
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/Randomization-Egypt-104927574520010/?modal=admin_todo_tour"><i class="fa fa-facebook"></i>FB</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>

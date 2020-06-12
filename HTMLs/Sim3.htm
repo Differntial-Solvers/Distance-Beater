@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Component force</title>
+    <link rel = "stylesheet" type = "text/css" href = "../CSSs/main theme.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "../CSSs/Sim3.css"/>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="../JSs/Sim3.js"></script>
+  </head>
+  <body style="background-color: #0b0c10;">
+    <nav>
+      <div id="nav_bar_logo">
+        <img src="../Photos/Team/icon.png" width="70px" height="auto" style="float: left; position: relative; bottom: 10px">
+        <span style="font-size:40px; font-weight:bold; font-family:Agency FB">Scientific</span><span style="font-size:10px"> By Differential Solvers</span>
+      </div>
+      <div id="nav_bar_buttons_sec">
+        <a href="home.htm" class="nav_bar_buttons"> <img src="../Photos/Navigation bar/home.png" width="20px" height="auto"> Home</a> \
+        <a href="simulations.htm" class="nav_bar_buttons" id="current_page"><img src="../Photos/Navigation bar/Simulations.png" width="27px" height="auto">Simulations</a> \
+        <a href="about.htm" class="nav_bar_buttons"><img src="../Photos/Navigation bar/About.png" width="24px" height="auto"> About Us</a> \
+        <a href="contact.htm" class="nav_bar_buttons"><img src="../Photos/Navigation bar/Contact.png" width="20px" height="auto"> Contact Us</a>
+      </div>
+    </nav>
+<div style="margin-top:25px; background-color: #2a3166;padding: 10px; margin-left:8px;margin-right:8px; display:flex; margin-bottom: 25px">
+  <p><button onclick="myMove1()">Force in X axis </button></p>
+  <p><button onclick="myMove2()">Force in Y axis</button></p>
+  <p><button onclick="myMove1();myMove2();myMove3()">Compount Forces</button></p>
+  <div id ="container_objects">
+    <div id ="object1"></div>
+    <div id ="object2"></div>
+    <div id ="object3"></div>
+  </div>
+</div>
+  <footer class="site-footer">
+    <div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Who we are</h6>
+          <p class="text-justify">We are a group of youth who belives in their abilites to achieve their thoughts, we belive that all people around the world should have the power of knowldge. We try as hard as we can to make the world a better place, we hope w are making a differnce, a good one! We created this orgnization so we can achieve our goals in the most effcient and professional way; we are doing a lot, and it is hard, but we belive the final outcome desrves.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Branches</h6>
+          <ul class="footer-links">
+            <li><a href="#physics">Physics</a></li>
+            <li><a href="#">Chemistry</a></li>
+            <li><a href="#">Biology</a></li>
+            <li><a href="#">Geology</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href=about.htm>About Us</a></li>
+            <li><a href=contact.htm>Contact Us</a></li>
+            <li><a href=simulations.htm>Simulations</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div>
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+       <i>Differential Solvers</i>.<br> Website made at <i>Crisis Engineering Contest</i> hosted by <i>IEEE Zewail City</i>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/Randomization-Egypt-104927574520010/?modal=admin_todo_tour"><i class="fa fa-facebook"></i>FB</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

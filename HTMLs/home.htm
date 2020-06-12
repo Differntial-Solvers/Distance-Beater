@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Distance Beater by Differential Solvers</title>
+    <link rel = "stylesheet" type = "text/css" href = "../CSSs/main theme.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "../CSSs/form.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "../CSSs/slider.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+
+  <body style="background-color: #0b0c10;">
+    <!-- Navigation bar -->
+    <nav>
+      <table>
+        <tr>
+          <td id="nav_bar_logo_block">
+            <!-- Navigation bar -> team name -->
+            <container id="nav_bar_logo">
+              <span id="project-name">Distance Beater</span><span id="team-name"> By Differential Solvers</span>
+              <br>
+              <span id="team-name-small"> By Differential Solvers</span>
+            </container>
+          </td>
+          <td id="nav_bar_buttons_column">
+            <!-- Navigation bar -> links -->
+            <container id="nav_bar_buttons_sec">
+              <a class="nav_bar_buttons" id="current_page"> <img src="../Photos/Navigation bar/home.png" width="20px" height="auto"> Home</a>
+              <a href="simulations.htm" class="nav_bar_buttons"><img src="../Photos/Navigation bar/Simulations.png" width="27px" height="auto">Simulations</a>
+              <a href="about.htm" class="nav_bar_buttons"><img src="../Photos/Navigation bar/About.png" width="24px" height="auto"> About Us</a>
+              <a href="contact.htm" class="nav_bar_buttons"><img src="../Photos/Navigation bar/Contact.png" width="20px" height="auto"> Contact Us</a>
+            </container>
+          </td>
+        </tr>
+      </table>
+    </nav>
+
+    <!-- main page content (transisions applied here) -->
+    <main>
+      <!-- Video -->
+      <div class="block" style="width:80%">
+        <!-- Main Video -->
+        <h2 style="color: white;">Where you are</h2>
+        <div>
+          <center>
+            <video autoplay controls src="../Videos/placeholder.mp4" width="100%"</video>
+          </center>
+        </div>
+      </div>
+      <!-- Sliders -->
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> <!-- Slider (Latest Simulations) -> main script link-->
+      <div class="block"> <!-- Slider (Latest Simulations) -> main block-->
+        <h2>Latest Simulations</h2> <!-- Slider (Latest Simulations) -> title-->
+        <!-- Slider (Latest Simulations) -> actual slider block -->
+        <div class="carousel" data-flickity=>
+          <!-- Slider (Latest Simulations) -> 1st block-->
+          <div class="carousel-cell">
+            <div>
+              <a href="Sim3.htm">
+                <img src="../Photos/Courses slider/commponent forces.png" alt="Our new simulation" class="slider_images">
+                <p>We have made a new simulation to help you understand forces</p>
+              </a>
+            </div>
+          </div>
+          <!-- Slider (Latest Simulations) -> 2nd block-->
+          <div class="carousel-cell">
+            <img src="../Photos/Courses slider/emc2-course.jpg" alt="A simulation for a course" class="slider_images">
+            <div style="width: 375px"> Here is a new simulation and you can find a wonderful course for it <a href="https://www.udemy.com/course/physics-kinematics/" target="_blank"> here </a> </div>
+          </div>
+          <!-- Slider (Latest Simulations) -> 3rd block-->
+          <div class="carousel-cell">
+            <a href="mohamed abu zaid simulation main page.htm"><img src="../Photos/Courses slider/research.png" alt="Research" class="slider_images"></a>
+            <div style="width:377.2px"> Mohammed AbuZaid's new research have a perfect simulation </div>
+          </div>
+        </div>
+      </div>
+      <div class="block"> <!-- Slider (Recommended courses) -> main block-->
+        <h2>Recommended courses</h2> <!-- Slider (Recommended courses) -> title-->
+        <!-- Slider (Recommended courses) -> actual slider block -->
+        <div class="carousel" data-flickity>
+          <!-- Slider (Recommended courses) -> 1st block-->
+          <div class="carousel-cell">
+            <div>
+              <a href="Sim3.htm">
+                <img src="../Photos/Courses slider/commponent forces.png" alt="Our new simulation" class="slider_images">
+                <p>We have made a new simulation to help you understand forces</p>
+              </a>
+            </div>
+          </div>
+          <!-- Slider (Recommended courses) -> 2nd block-->
+          <div class="carousel-cell">
+            <img src="../Photos/Courses slider/emc2-course.jpg" alt="A simulation for a course" class="slider_images">
+            <div style="width: 375px"> Here is a new simulation and you can find a wonderful course for it <a href="https://www.udemy.com/course/physics-kinematics/" target="_blank"> here </a> </div>
+          </div>
+          <!-- Slider (Recommended courses) -> 3rd block-->
+          <div class="carousel-cell">
+            <a href="https://pdfs.semanticscholar.org/7ab1/df35e01d4d756c7906980dc3f14c802b49e5.pdf"><img src="../Photos/Courses slider/research.png" alt="Research" class="slider_images"></a>
+            <div style="width:377.2px"> Mohammed AbuZaid's new research have a perfect simulation </div>
+          </div>
+        </div>
+      </div>
+      <!-- rating form -->
+      <!-- rating form -> JS linking-->
+      <script type = "text/javascript" src="../JSs/form checker rate.js"></script>
+      <!-- rating form -> block-->
+      <div style="padding: 10px;" class="block">
+        <!-- rating form -> block -> title -->
+        <h1 style="color:white;">What do you think about us?</h1>
+        <!-- rating form -> main block-->
+        <div class="container_form" ;>
+          <form name = "Form" onsubmit = "return(form_sub_rating());">
+              <div  style="display: flex;">
+                <div style="width:418px;">
+                  <!-- rating form -> main block -> desgin -->
+                  <label for="design">Rate the design</label>
+                  <select name="design">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <!-- rating form -> main block -> content-->
+                  <label for="content">Rate the content</label>
+                  <select name="content">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <!-- rating form -> main block -> simulations -->
+                  <label for="simulations">Rate the simulations</label>
+                  <select name="simulations">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <!-- rating form -> main block -> feedback -->
+                <div style="width:850px; margin-left:10px">
+                  <label for="subject">Feedback</label>
+                  <textarea id="subject" name="subject" class="inside_forms" placeholder="Write something..." style="height:186px"></textarea>
+                </div>
+              </div>
+              <!-- rating form -> main block -> small spacing -->
+            <p></p>
+            <!-- rating form -> main block -> submit button -->
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="site-footer">
+      <!-- footer -> first row -->
+      <div>
+        <div class="row">
+          <!-- footer -> first row -> 1st column (Who we are section) -->
+          <div class="col-sm-12 col-md-6">
+            <h6>Who we are</h6>
+            <p class="text-justify">We are a group of youth who belives in their abilites to achieve their thoughts, we belive that all people around the world should have the power of knowldge. We try as hard as we can to make the world a better place, we hope w are making a differnce, a good one! We created this orgnization so we can achieve our goals in the most effcient and professional way; we are doing a lot, and it is hard, but we belive the final outcome desrves.</p>
+          </div>
+          <!-- footer -> first row -> 2nd column (science branches section) -->
+          <div class="col-xs-6 col-md-3">
+            <h6>Branches</h6>
+            <ul class="footer-links">
+              <li><a href="#physics">Physics</a></li>
+              <li><a href="#">Chemistry</a></li>
+              <li><a href="#">Biology</a></li>
+              <li><a href="#">Geology</a></li>
+            </ul>
+          </div>
+          <!-- footer -> first row -> 3nd column (quick links) -->
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href=about.htm>About Us</a></li>
+              <li><a href=contact.htm>Contact Us</a></li>
+              <li><a href=simulations.htm>Simulations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- footer -> sperating line -->
+      <hr>
+      <!-- footer -> 2nd row -->
+      <div>
+        <div class="row">
+          <!-- footer -> 2nd row -> 1st column (copyrights) -->
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <i>Differential Solvers</i>. <br> Website made at <i>Crisis Engineering
+            Contest</i> hosted by <i>IEEE Zewail City</i>.</p>
+          </div>
+          <!-- footer -> 2nd row -> 2nd column (social media) -->
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/Randomization-Egypt-104927574520010/?modal=admin_todo_tour"><i class="fa fa-facebook"></i>FB</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

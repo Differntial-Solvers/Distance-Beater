@@ -1,0 +1,39 @@
+/* main form block styling */
+.container_form {
+  border-radius: 5px;
+  background-color: #0c1014;
+  padding: 20px;
+  color: black;
+}
+.container_form label {
+  color: white;
+}
+/* text input styling*/
+input[type=text], select, textarea {
+  width: 100%;
+    padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+/* text inside selections styling */
+.inside_forms {
+  color: black
+}
+/* submit button styling*/
+input[type=submit] {
+  background-color: #45a29e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+input[type=submit]:hover {
+  background-color: #66fcf1;
+  color: #1f2833;
+}

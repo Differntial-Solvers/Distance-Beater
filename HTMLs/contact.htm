@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Differential Solvers</title>
+    <link rel = "stylesheet" type = "text/css" href = "../CSSs/main theme.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "../CSSs/form.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  </head>
+  <body style="background-color: #0b0c10;">
+    <!-- Navigation bar -->
+    <nav>
+      <table>
+        <tr>
+          <td id="nav_bar_logo_block">
+            <!-- Navigation bar -> team name -->
+            <container id="nav_bar_logo">
+              <span id="project-name">Distance Beater</span><span id="team-name"> By Differential Solvers</span>
+              <br>
+              <span id="team-name-small"> By Differential Solvers</span>
+            </container>
+          </td>
+          <td id="nav_bar_buttons_column">
+            <!-- Navigation bar -> links -->
+            <container id="nav_bar_buttons_sec">
+              <a href="home.htm" class="nav_bar_buttons"> <img src="../Photos/Navigation bar/home.png" width="20px" height="auto"> Home</a>
+              <a href="simulations.htm" class="nav_bar_buttons"><img src="../Photos/Navigation bar/Simulations.png" width="27px" height="auto">Simulations</a>
+              <a href="about.htm" class="nav_bar_buttons"><img src="../Photos/Navigation bar/About.png" width="24px" height="auto"> About Us</a>
+              <a id="current_page" class="nav_bar_buttons"><img src="../Photos/Navigation bar/Contact.png" width="20px" height="auto"> Contact Us</a>
+            </container>
+          </td>
+        </tr>
+      </table>
+    </nav>
+
+    <!-- main page content (transisions applied here) -->
+    <main>
+      <!-- Emails part -->
+      <div class="block">
+        <h1>Our Emails:</h1>
+        <ul>
+          <li>salahdin.1519013@stemluxor.moe.edu.eg</li>
+          <li>younis.1519035@stemluxor.moe.edu.eg</li>
+          <li>marawan.1519030@stemluxor.moe.edu.eg</li>
+          <li>ahmed.1519002@stemkalubya.moe.ede.eg</li>
+          <li>ahmed4921.ali@gmail.com</li>
+        </ul>
+      </div>
+      <!-- Phone No. part -->
+      <div class="block">
+        <h1>Our Phone Numbers:</h1>
+        <ul>
+          <li>SalahDin: +20 109 499 4995</li>
+          <li>Younis: +20 102 763 1469</li>
+          <li>Marawan: +20 111 323 0843</li>
+          <li>Ahmed Saeid: +20 111 411 2525</li>
+          <li>Ahmed Osama: +20 114 483 9085</li>
+        </ul>
+      </div>
+      <!-- Social media part -->
+      <div class="block">
+        <h1>Our social media accounts:</h1>
+        <ul>
+          <li><a class="team" href="https://www.facebook.com/Randomization-Egypt-104927574520010/?modal=admin_todo_tour">Facebook Page</a></li>
+          <li><a class="team" href="https://www.facebook.com/salah.dinahmed.39">SalahDin</a></li>
+          <li><a class="team" href="https://www.facebook.com/younis.tr">Younis</a></li>
+          <li><a class="team" href="https://www.facebook.com/esame.marawan">Marawan</a></li>
+          <li><a class="team" href="https://www.facebook.com/profile.php?id=100004916835955">Ahmed Saeid</a></li>
+          <li><a class="team" href="https://www.facebook.com/ahmed.eminem52">Ahmed Osama</a></li>
+        </ul>
+      </div>
+      <!-- Contact form -->
+      <script type = "text/javascript" src="../JSs/form checker contact.js"></script> <!-- Contact form -> JS checker linking -->
+      <div class="block"> <!-- Contact form -> block -->
+        <h1>Too lazy to contact us? Fill the form!</h1> <!-- Contact form -> block -> title-->
+        <!-- Contact form -> main block -->
+        <div class="container_form">
+          <form name = "myForm" onsubmit = "return(form_sub_contact());">
+            <div  style="display: flex;">
+              <div style="width:418px;">
+                <label for="fname">First Name</label> <!-- Contact form -> main block -> first name -->
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." class="inside_forms">
+                <label for="lname">Last Name</label> <!-- Contact form -> main block -> last name -->
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="inside_forms">
+                <label for="email">Email</label> <!-- Contact form -> main block -> email -->
+                <input type="text" id="email" name="email" placeholder="Your email.." class="inside_forms">
+              </div>
+              <div style="width:850px; margin-left:10px"> <!-- Contact form -> main block -> subject block -->
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something..." style="height:238px" class="inside_forms"></textarea>
+              </div>
+            </div>
+            <input type="submit" value="Submit"> <!-- Contact form -> main block -> submit button -->
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="site-footer">
+      <!-- footer -> first row -->
+      <div>
+        <div class="row">
+          <!-- footer -> first row -> 1st column (Who we are section) -->
+          <div class="col-sm-12 col-md-6">
+            <h6>Who we are</h6>
+            <p class="text-justify">We are a group of youth who belives in their abilites to achieve their thoughts, we belive that all people around the world should have the power of knowldge. We try as hard as we can to make the world a better place, we hope w are making a differnce, a good one! We created this orgnization so we can achieve our goals in the most effcient and professional way; we are doing a lot, and it is hard, but we belive the final outcome desrves.</p>
+          </div>
+          <!-- footer -> first row -> 2nd column (science branches section) -->
+          <div class="col-xs-6 col-md-3">
+            <h6>Branches</h6>
+            <ul class="footer-links">
+              <li><a href="#physics">Physics</a></li>
+              <li><a href="#">Chemistry</a></li>
+              <li><a href="#">Biology</a></li>
+              <li><a href="#">Geology</a></li>
+            </ul>
+          </div>
+          <!-- footer -> first row -> 3nd column (quick links) -->
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href=about.htm>About Us</a></li>
+              <li><a href=contact.htm>Contact Us</a></li>
+              <li><a href=simulations.htm>Simulations</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- footer -> sperating line -->
+      <hr>
+      <!-- footer -> 2nd row -->
+      <div>
+        <div class="row">
+          <!-- footer -> 2nd row -> 1st column (copyrights) -->
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            <i>Differential Solvers</i>. <br> Website made at <i>Crisis Engineering
+            Contest</i> hosted by <i>IEEE Zewail City</i>.</p>
+          </div>
+          <!-- footer -> 2nd row -> 2nd column (social media) -->
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://www.facebook.com/Randomization-Egypt-104927574520010/?modal=admin_todo_tour"><i class="fa fa-facebook"></i>FB</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
