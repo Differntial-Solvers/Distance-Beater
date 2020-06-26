@@ -35,7 +35,10 @@ nav table tr td a {
 #nav_bar_buttons_column {
   text-align: right;
 }
-@media (max-width: 666px){
+#menu-button, #menu-button-icon {
+  display: none;
+}
+@media (max-width: 790px){
   #team-name {
     display: none;
   }
@@ -43,7 +46,7 @@ nav table tr td a {
     display: block;
   }
 }
-@media (max-width: 600px){
+@media (max-width: 675px){
   #team-name-small {
     display: none;
   }
@@ -95,9 +98,47 @@ nav table tr td a {
     cursor: default;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 460px) {
   .nav_bar_buttons {
     font-size: 11.4px;
+  }
+}
+@media (max-width: 420px) {
+  #nav_bar_buttons_sec {
+    display: none;
+    background-color: #1f2833;
+    position: absolute;
+    right: 0px;
+    transition: 0.3s;
+  }
+  #team-name {
+    display: none;
+  }
+  #menu-button-icon {
+    display: block;
+    font-size: 35px;
+    transition: 0.3s;
+  }
+  nav table tr td, nav table tr  {
+    display: inline-table;
+  }
+  nav {
+    height: 55px;
+  }
+  #menu-button-icon {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    animation: transitionIn 0.5s;
+  }
+  #menu-button:checked + #nav_bar_buttons_sec {
+    display: inline-grid;
+  }
+  #menu-button:checked ~ label {
+    transform: rotate(225deg);
+  }
+  main {
+    animation: transitionIn 0.5s;
   }
 }
 
