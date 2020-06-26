@@ -32,7 +32,7 @@ nav table tr td a {
   font-weight:bold;
   font-family:Agency FB;
 }
-#nav_bar_buttons_column {
+#nav-bar-buttons-column {
   text-align: right;
 }
 #menu-button, #menu-button-icon {
@@ -53,7 +53,7 @@ nav table tr td a {
   #team-name {
     display: inline;
   }
-  #nav_bar_buttons_column {
+  #nav-bar-buttons-column {
     text-align: center;
   }
   nav table tr td, nav table tr  {
@@ -68,29 +68,29 @@ nav table tr td a {
 }
 
 /* navigation bar styling -> team logo and name */
-#nav_bar_logo {
+#nav-bar-logo {
   color:black;
   width:30%;
   color: #c5c6c7;
 }
 /* navigation bar styling -> links and sections */
-#nav_bar_buttons_sec {
+#nav-bar-buttons-sec {
   margin-top: 16px;
   padding-right: auto;
 }
-.nav_bar_buttons, .nav_bar_buttons:visited, .nav_bar_buttons:active {
+.nav-bar-buttons, .nav-bar-buttons:visited, .nav-bar-buttons:active {
   color: #c5c6c7;
   font-size: 15px;
   text-decoration: none;
   transition: 0.3s;
 }
-.nav_bar_buttons:hover {
+.nav-bar-buttons:hover {
   text-decoration: none;
   background-color: #45a29e;
   padding: 10px
 }
 /* navigation bar styling -> links and sections -> current page (section) */
-#current_page, #current_page:visited, #current_page:hover, #current_page:active, #current_page:focus {
+#current-page, #current-page:visited, #current-page:hover, #current-page:active, #current-page:focus {
   color: black;
   background-color:#66fcf1 ;
   padding: 10px;
@@ -99,12 +99,12 @@ nav table tr td a {
 }
 
 @media (max-width: 460px) {
-  .nav_bar_buttons {
+  .nav-bar-buttons {
     font-size: 11.4px;
   }
 }
 @media (max-width: 420px) {
-  #nav_bar_buttons_sec {
+  #nav-bar-buttons-sec {
     display: none;
     background-color: #1f2833;
     position: absolute;
@@ -131,7 +131,7 @@ nav table tr td a {
     top: 3px;
     animation: transitionIn 0.5s;
   }
-  #menu-button:checked + #nav_bar_buttons_sec {
+  #menu-button:checked + #nav-bar-buttons-sec {
     display: inline-grid;
   }
   #menu-button:checked ~ label {
@@ -215,25 +215,25 @@ ul {
   color: white;
 }
 /* bloks styling -> simulations bloks styling */
-.sim_block{
+.sim-block{
   padding: 0px;
   background-color: transparent;
   border-color: transparent;
   transition: 0.3s;
 }
-.sim_block:hover {
+.sim-block:hover {
   background-color: white;
   text-decoration: none;
   color: #45a29e;
   padding: 5px
 }
-.sim_block:visited {
+.sim-block:visited {
   text-decoration: none;
   padding: 0px;
   background-color: transparent;
   border-color: transparent;
 }
-.sim_block h4 {
+.sim-block h4 {
   font-size: 17px;
 }
 
